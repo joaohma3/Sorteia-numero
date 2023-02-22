@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<script>
+		function pulaLinha(){
+
+			document.write("<br>");
+			document.write("<br>");	
+		}
+
+		function mostra(frase){
+
+			document.write(frase);
+			pulaLinha();
+		}
+
+	var sorteia = Math.round(Math.random() * 100);
+
+	var chute = parseInt(prompt("Advinhe qual é o número: "));
+
+	if ( chute == sorteia ){
+
+		mostra(" Parabens voce acertou")
+	} else{
+		mostra("você errou, eu tinha pesando no número: " + sorteia)
+	}
+
+
+
+
+</script>
